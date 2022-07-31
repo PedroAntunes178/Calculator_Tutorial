@@ -4,7 +4,6 @@ import tkinter.messagebox
 from tkinter.constants import SUNKEN
 from calc_tutorial_5 import *
 
-DEBUG = 0
 PROGRAM = 'Calculator Tutorial'
 window_width = 10
 

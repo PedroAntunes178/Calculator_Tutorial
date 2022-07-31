@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+import sys
 
 DEBUG = 0
 
@@ -66,6 +67,9 @@ def calculate(calc):
     if DEBUG: print(int(res))
     return str(res)
 
-user_input = input('Inserir conta: ')
+if (len(sys.argv) != 2):
+    user_input = input('Inserir conta: ')
+else:
+    user_input = sys.argv[1]
 final_result = calculate(user_input)
 print('Result: ' + str(final_result))

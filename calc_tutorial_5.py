@@ -67,9 +67,10 @@ def calculate(calc):
     if DEBUG: print(int(res))
     return str(res)
 
-if (len(sys.argv) != 2):
-    user_input = input('Inserir conta: ')
-else:
-    user_input = sys.argv[1]
-final_result = calculate(user_input)
-print('Result: ' + str(final_result))
+if __name__ == "__main__":
+    if (len(sys.argv) != 2):
+        user_input = input('Inserir conta: ')
+    else:
+        user_input = sys.argv[1]
+    final_result = calculate(user_input)
+    print('Result: ' + str(final_result))

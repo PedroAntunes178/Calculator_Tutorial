@@ -10,5 +10,9 @@ Make a simple calculator
 - calc_tutorial_5.py -> TO DO; calculator respects "()" order;
 - calc_tutorial_final.py -> TO DO; calculator with a simple GUI implementing the previous developed calculator script.
 
+# Requirements
+- Python3
+- tkinter -> can be installed with `pip install tkinter` or with `sudo apt install python3-tk`
+
 # Objective
 This project was created with the intuit of helping my brother to start programming.

@@ -53,7 +53,7 @@ def calculate(calc):
             if DEBUG: print('Sub calculation between ' + str(i_idx_subcalc) + ' and ' + str(f_idx_subcalc))
             aux = calculate(calc[i_idx_subcalc:f_idx_subcalc])
             idx = f_idx_subcalc
-        elif (c in possible_operations):
+        elif ((c in possible_operations) and (aux != '')):
             input_numbers.append(float(aux))
             input_operations.append(c)
             aux = ''

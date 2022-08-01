@@ -38,7 +38,7 @@ def main():
     possible_operations = ['+', '-', '/', '*']
     aux = ''
     for c in calc:
-        if (c in possible_operations):
+        if ((c in possible_operations) and (aux != '')):
             input_numbers.append(float(aux))
             input_operations.append(c)
             aux = ''
